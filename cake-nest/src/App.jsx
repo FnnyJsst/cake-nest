@@ -1,5 +1,6 @@
 import './App.css'
-import Form from './components/LoginForm'
+
+import LoginPage from './components/LoginPage'
 
 
 function App() {
@@ -8,7 +9,8 @@ function App() {
     <>
       <h1>Bienvenue chez nous !</h1>
       <h2>Connectez-vous</h2>
-      <Form /> 
+      <LoginPage />
+      
     </>
   )
 }
