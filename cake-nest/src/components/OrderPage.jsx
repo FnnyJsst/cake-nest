@@ -1,17 +1,16 @@
-function OrderPage () {
+import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        window.location.href = '/';
-    }
+
+export default function OrderPage(props) {
+    const {username} = useParams();
+
     return (
         <div>
-            <h1>Bonjour</h1>
-            <form onSubmit={handleSubmit}>
+            <h1>Bonjour {username}</h1>
+            <Link to={"/"}>
                 <button>Déconnexion</button>
-            </form>
+            </Link>
         </div>
-    )
+    );
 }
-
-export default OrderPage;
