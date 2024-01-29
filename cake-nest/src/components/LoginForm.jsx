@@ -1,9 +1,11 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function LoginForm() {
   const [formValues, setFormValues] = useState({
     name: ''
   });
+  const navigate = useNavigate();
   
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -14,14 +16,13 @@ function LoginForm() {
   };
 
   const handleSubmit = (e) => {
-    //empêche le rechargement de la page
     e.preventDefault();
 
     if (formValues.name) {
-      alert(`Bonjour ${formValues.name}`);
       setFormValues({
         name: '',
       });
+      navigate('/order');
     }
   };
 
