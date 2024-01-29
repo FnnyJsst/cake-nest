@@ -4,7 +4,6 @@ import Form from './components/form'
 
 function App() {
 
-
   return (
     <>
       <h1>Bienvenue chez nous !</h1>
