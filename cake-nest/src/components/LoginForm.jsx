@@ -1,11 +1,10 @@
 import { useState } from 'react';
 
-function Form() {
+function LoginForm() {
   const [formValues, setFormValues] = useState({
     name: ''
   });
   
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormValues((prevValues) => ({
@@ -44,4 +43,4 @@ function Form() {
   );
 }
 
-export default Form;
+export default LoginForm;
