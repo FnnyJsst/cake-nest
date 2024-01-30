@@ -68,8 +68,9 @@ const LoginFormStyles = styled.form`
   
   h2, h3 {
     color: white;
-    font-size: ${theme.fonts.size.P4};
+    font-size: ${theme.fonts.size.P5};
     margin : ${theme.spacing.md};
+    width: 100%;
 
     @font-face {
         font-family: "Pacifico";
@@ -82,7 +83,11 @@ const InputGroup = styled.div`
     display: flex;
     position: relative;
     align-items: center;
-    justify-content: flex-start;`
+    justify-content: flex-start;
+    
+    .icon {
+        color: gray;
+    }`
 
 const IconWrapper = styled.div`
     width: 40px;
@@ -105,5 +110,8 @@ const ButtonGroup = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-  
-    }`
+    font-family: "Open Sans", sans-serif;
+    font-weight: semibold;  
+    }
+    
+  `

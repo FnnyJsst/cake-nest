@@ -46,7 +46,7 @@ const LoginPageSpan = styled.span`
 
     h1 {
         font-family: sans-serif;
-        font-size: ${theme.fonts.size.P4};
+        font-size: ${theme.fonts.size.P5};
     }
 
 
