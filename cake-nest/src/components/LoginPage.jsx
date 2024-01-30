@@ -1,5 +1,4 @@
 import LoginForm from "./LoginForm";
-import Logo from "./Logo";
 import styled from "styled-components";
 import { theme } from "../theme";
 
@@ -13,7 +12,9 @@ export default function LoginPage () {
         <>
             <LoginPageStyles>
             <LoginPageSpan>
-                    <Logo />
+                    <h1>CAKE</h1>
+                    <img src="/../public/cupcake.png" alt="cake" />
+                    <h1>NEST</h1>
             </LoginPageSpan>
                 <LoginForm />
             </LoginPageStyles>

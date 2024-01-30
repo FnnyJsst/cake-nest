@@ -1,9 +1,9 @@
 import Profile from "./Profile"
 
-export default function RightSide() {
+export default function RightSide({ username }) {
     return (
         <>
-            <Profile  />
+            <Profile username={username}  />
         </>
     )
 }

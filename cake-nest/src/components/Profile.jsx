@@ -32,6 +32,7 @@ const ProfileStyled = styled.div`
   .info {
     text-align: right;
     margin-right: 10px;
+    font-family: "Open Sans", sans-serif;
     p {
       margin: 0;
       color: ${theme.colors.greyBlue};
@@ -44,7 +45,7 @@ const ProfileStyled = styled.div`
       .description {
         &:hover {
           text-decoration: underline;
-          color: ${theme.colors.greyDark};
+          color: ${theme.colors.greyLight};
         }
         small {
           font-size: ${theme.fonts.size.XXS};
