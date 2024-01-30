@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { theme } from "../theme";
 import { IoPersonCircleOutline } from "react-icons/io5";
+import { IoIosArrowForward } from "react-icons/io";
 
 export default function LoginForm() {
 
@@ -25,9 +26,18 @@ export default function LoginForm() {
             <h2>Bienvenue chez nous !</h2>
             <hr />
             <h3>Connectez-vous</h3>
-            <input value={inputValue} onChange={handlechange} placeholder={"Entrez votre prénom"} required icon={<IoPersonCircleOutline className="icon"/>}/>
-
-            <button>Mon espace </button>
+            <InputGroup >
+            <IconWrapper>
+                    <IoPersonCircleOutline className="icon"/>
+            </IconWrapper>
+                <input value={inputValue} onChange={handlechange} placeholder={"Entrez votre prénom"} required/>
+            </InputGroup>
+            <ButtonGroup>
+                <button>Mon espace 
+                    <IoIosArrowForward className="icon"/>
+                </button>
+                
+            </ButtonGroup>
         </LoginFormStyles>
     );
 }
@@ -47,16 +57,9 @@ const LoginFormStyles = styled.form`
     height: 40px;
     border: none;
     border-radius: ${theme.borderRadius.round};
-  }
-
-  button {
-    background-color: ${theme.colors.primary};
-    border-radius: ${theme.borderRadius.round};
-    color: white;
-    height: 40px;
-    margin-top: ${theme.spacing.md};
-    font-size: ${theme.fonts.size.P0};
-    border: none;
+    width: 100%;
+  
+    padding-left: 10%;
   }
 
   hr {
@@ -74,3 +77,33 @@ const LoginFormStyles = styled.form`
     }
     
   }`
+
+const InputGroup = styled.div`
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: flex-start;`
+
+const IconWrapper = styled.div`
+    width: 40px;
+    position: absolute;
+`
+
+const ButtonGroup = styled.div`
+    color: white;
+  
+
+    button {
+    background-color: ${theme.colors.primary};
+    border-radius: ${theme.borderRadius.round};
+    color: white;
+    height: 40px;
+    margin-top: ${theme.spacing.md};
+    font-size: ${theme.fonts.size.P0};
+    border: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    }`
