@@ -2,8 +2,12 @@ import styled from "styled-components";
 import { theme } from "../theme";
 
 export default function Logo() {
+    const reloadPage = () => {
+        window.location.reload();
+    }
+
     return (
-            <LogoStyle>
+            <LogoStyle onClick = {() => reloadPage()} style={{cursor: "pointer"}}>
                 <h1>CAKE</h1>
                 <img src="/../public/cupcake.png" alt="cake" />
                 <h1>NEST</h1>
