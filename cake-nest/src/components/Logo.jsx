@@ -9,7 +9,7 @@ export default function Logo() {
     return (
             <LogoStyle onClick = {() => reloadPage()} style={{cursor: "pointer"}}>
                 <h1>CAKE</h1>
-                <img src="/../public/cupcake.png" alt="cake" />
+                <img src="/images/cupcake.png" alt="cake" />
                 <h1>NEST</h1>
             </LogoStyle>
     )

@@ -20,7 +20,7 @@ const NavBarStyled = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    height: 80px;
+    height: 20vh;
     border-bottom: 1px solid #E5E5E5;
     background-color: #FFFFFF;
     position: sticky;

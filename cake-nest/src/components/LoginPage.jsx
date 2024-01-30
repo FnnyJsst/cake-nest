@@ -13,7 +13,7 @@ export default function LoginPage () {
             <LoginPageStyles>
             <LoginPageSpan>
                     <h1>CAKE</h1>
-                    <img src="/../public/cupcake.png" alt="cake" />
+                    <img src="/images/cupcake.png" alt="cake" />
                     <h1>NEST</h1>
             </LoginPageSpan>
                 <LoginForm />
@@ -25,7 +25,7 @@ export default function LoginPage () {
 const LoginPageStyles = styled.div`
     position: relative;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../../public/tarts.jpg");
+    url("/images/tarts.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
