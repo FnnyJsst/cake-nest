@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { theme } from "../theme";
+import { IoPersonCircleOutline } from "react-icons/io5";
 
 export default function LoginForm() {
 
@@ -24,9 +25,9 @@ export default function LoginForm() {
             <h2>Bienvenue chez nous !</h2>
             <hr />
             <h3>Connectez-vous</h3>
-            <input value={inputValue} onChange={handlechange} placeholder={"Entrez votre prénom"} required />
+            <input value={inputValue} onChange={handlechange} placeholder={"Entrez votre prénom"} required icon={<IoPersonCircleOutline className="icon"/>}/>
 
-            <button>Mon espace</button>
+            <button>Mon espace </button>
         </LoginFormStyles>
     );
 }
@@ -39,6 +40,24 @@ const LoginFormStyles = styled.form`
   padding: 40px ${theme.spacing.lg};
   border-radius: ${theme.borderRadius.round};
   font-family: "Pacifico", sans-serif;
+  display: flex;
+  flex-direction: column;
+
+  input {
+    height: 40px;
+    border: none;
+    border-radius: ${theme.borderRadius.round};
+  }
+
+  button {
+    background-color: ${theme.colors.primary};
+    border-radius: ${theme.borderRadius.round};
+    color: white;
+    height: 40px;
+    margin-top: ${theme.spacing.md};
+    font-size: ${theme.fonts.size.P0};
+    border: none;
+  }
 
   hr {
     border: 1.56px solid ${theme.colors.loginLine}
@@ -47,6 +66,7 @@ const LoginFormStyles = styled.form`
   h2, h3 {
     color: white;
     font-size: ${theme.fonts.size.P4};
+    margin : ${theme.spacing.md};
 
     @font-face {
         font-family: "Pacifico";

@@ -5,6 +5,7 @@ import { theme } from "../theme";
 
 
 
+
 export default function LoginPage () {
 
     return (
@@ -40,12 +41,12 @@ const LoginPageSpan = styled.span`
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding-top: 5%;
+    padding-top: ${theme.spacing.xxl};
+    padding-bottom: ${theme.spacing.xl};
 
     h1 {
         font-family: sans-serif;
         font-size: ${theme.fonts.size.P4};
-       
     }
 
 
